@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap");
+
+:root {
+  --white: #fff;
+  --gray: #b9babd;
+  --darkgray: #555;
+  --black: #211a10;
+  --green: #0ffb8c;
+  --blue: #0084fe;
+  --red: #e01245;
+  --yellow: #fffb8c;
+  --pink: #d790b0;
+  --purple: #b783e2;
+  --main: var(--purple);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--black);
+  font-size: 1em;
+  height: 100%;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 800;
+  color: var(--main);
+}
+
+header a {
+  color: var(--main);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+header a:before {
+  content: "←";
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 5px;
+  overflow: hidden;
+  width: 0;
+  transition: all 300ms ease-out;
+}
+
+header a:hover {
+  font-weight: 800;
+}
+
+header a:hover:before {
+  width: 30px;
+}
+
+h2 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  white-space: nowrap;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+h4 {
+  margin: 20px 0 0;
+  font-size: 16px;
+}
+
+strong {
+  font-weight: 800;
+}
+
+header,
+footer,
+main {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+
+header {
+  background: var(--black);
+  color: white;
+}
+
+section {
+  display: flex;
+  gap: 30px;
+  border-bottom: 2px solid var(--black);
+  padding: 20px 0 60px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+section:last-child {
+  padding: 20px 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.element:not(.square) {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.element-green {
+  background: var(--green);
+}
+
+.element-blue {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.element-red {
+  background: var(--red);
+  color: var(--white);
+}
+
+.element-yellow {
+  color: var(--black);
+  background: var(--yellow);
+  text-shadow: none;
+}
+
+.element-pink {
+  background: var(--pink);
+  color: var(--white);
+}
+
+.element-gray {
+  background: var(--gray);
+}
+
+.element-big:not(.square) {
+  font-size: 2rem;
+}
+
+.element-med:not(.square) {
+  font-size: 1.4rem;
+}
+
+.exercice {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.exercice .container-set {
+  height: 420px;
+  overflow: hidden;
+}
+
+.exercices-5 .container-set {
+  height: 300px;
+}
+
+.exercice .container-small {
+  min-height: 205px;
+}
+
+.exercice .container {
+  width: 50%;
+  min-height: 210px;
+  border: 4px solid var(--black);
+  background: var(--white);
+}
+
+.exercice .container-big {
+  min-height: 410px;
+}
+
+.exercices-1 .container {
+  min-height: 0;
+}
+
+.exercice .thumbnail {
+  width: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.exercice .thumbnail div {
+  margin-bottom: 20px;
+}
+
+.exercice .thumbnail img {
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  height: auto;
+  border: 2px solid var(--black);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.code {
+  color: rgba(0, 0, 0, 0.661);
+  background: #00000013;
+  background-blend-mode: darken;
+  padding: 15px;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu a {
+  font-size: 22px;
+  font-weight: 800;
+  color: black;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a:after {
+  content: "→";
+  display: inline-block;
+  margin-left: 10px;
+  transition: transform 300ms ease-out;
+}
+
+.menu a:hover {
+  text-decoration: none;
+}
+
+.menu a:hover:after {
+  transform: translateX(10px);
+}
