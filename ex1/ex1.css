@@ -1,54 +1,36 @@
 body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
+  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
 }
 
-.card {
-  width: 300px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.card-info {
+nav {
   /* 🦊 Ajouter les propriétés Flexbox ici */
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
 }
 
-.card-image {
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-}
-
-.card-title {
+.logo {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 0 0 10px;
 }
 
-.card-price {
+.nav-links {
+  /* 🦊 Ajouter les propriétés Flexbox ici */
+  list-style: none;
   margin: 0;
-  color: green;
-  font-size: 1.2rem;
+  padding: 0;
 }
 
-.card-button {
-  padding: 10px 20px;
-  background-color: blue;
+.nav-links li a {
+  text-decoration: none;
   color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
 }
 
-.card-button:hover {
-  background-color: darkblue;
+.nav-links li a:hover {
+  background-color: #555;
+  border-radius: 4px;
 }

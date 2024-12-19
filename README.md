@@ -12,7 +12,7 @@
 
 **CSS UNIQUEMENT** - 10 minutes
 
-Sur la base du code HTML (ex1.html), ajoutez les propriétés CSS manquantes (ex1.css) pour obtenir le rendu suivant :
+Sur la base du code HTML (ex1.html), ajoutez les propriétés CSS manquantes (aux emplacements indiqués dans ex1.css) pour obtenir le rendu suivant :
 
 ![ex1](ex1/ex1.png)
 
@@ -50,8 +50,8 @@ Dans l'exercice 3, réalisez les 3 dispositions différentes en CSS, dans le fic
 
 Dans l'exercice 4:
 
-1. Ouvrez l'image dans Figma (ou Aperçu)
-2. Découpez l'image en ajoutant des rectangles bien marqués pour montrer toutes les balises HTML nécessaires pour reproduire l'image en HTML/CSS
+1. Ouvrez l'image dans Figma (ou Aperçu ou autre)
+2. Découpez l'image en ajoutant des rectangles bien marqués pour montrer toutes les balises HTML que vous utiliseriez pour reproduire le composant en HTML/CSS
 3. Exportez l'image découpée en format PNG et remplacer l'image originale par l'image découpée dans le dossier ex4
 
 **Voici un exemple de ce qu'on attend:**

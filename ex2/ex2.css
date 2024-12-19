@@ -1,60 +1,43 @@
 /* 🦊 Aucun CSS ne doit changer dans ce fichier. */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-}
-
-h1 {
-  text-align: left;
-}
-
-header {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 90%;
-  max-width: 800px;
-  margin: 20px auto;
+  height: 100vh;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+main {
+  width: 400px;
   background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.header-top {
+  padding: 20px;
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  gap: 20px;
 }
 
-nav {
-  display: flex;
-  border: 1px solid orange;
-  padding: 4px;
-  border-radius: 24px;
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
 }
 
-nav a {
-  padding: 10px 18px;
-  color: black;
-  text-decoration: none;
-  background-color: orange;
-  font-size: 1.2rem;
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-nav a:first-child {
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-}
-
-nav a:last-child {
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-nav a:hover {
-  background-color: orangered;
-  color: white;
+.profile-bio {
+  font-size: 1rem;
+  color: #666;
 }
